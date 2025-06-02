@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stil3.css">
+    <title>fotogaleri</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+
+<div id="banner">
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="gezilebilicek yerler.html">Gezilebilecek Yerler</a></li>
+            <li><a href="fotogaleri.html">fotogaleri</a></li>
+            <li><a href="hakkımızda.html">Hakkımızda</a></li>
+            <li><a href="tarihçe.html">Tarihçe</a></li>
+    </ul>
+        
+    </div>
+</div>
+
+
+<div class="gallery">
+    <img src="resimler/sultanahmet meydanı.jpg" onclick="openModal(this)">
+    <img src="resimler/2.jpg" onclick="openModal(this)">
+    <img src="resimler/3.jpg" onclick="openModal(this)">
+    <img src="resimler/rumeli-hisari.jpg" onclick="openModal(this)">
+    <img src="resimler/dolambahçe sarayı.jpg" onclick="openModal(this)">
+    <img src="resim/Mısır_Carsisi.jpg" onclick="openModal(this)">
+    <img src="resim/kapali_carsi.jpg" onclick="openModal(this)">         
+    <img src="resimler/yerebatan.jpg" onclick="openModal(this)">
+    <img src="resim/topkapı sarayı.jpg" onclick="openModal(this)">
+    <img src="resimler/aya-yorgi.jpg" onclick="openModal(this)">
+    <img src="resimler/rumeli-hisari.jpg" onclick="openModal(this)">
+    <img src="resimler/1.jpg" onclick="openModal(this)">
+    <img src="resimler/4.jpg" onclick="openModal(this)">
+    <img src="resimler/5.jpg" onclick="openModal(this)">
+    <img src="resimler/6.jpg" onclick="openModal(this)">
+    <img src="resimler/7.jpg" onclick="openModal(this)">
+    <img src="resimler/8.jpg" onclick="openModal(this)">
+    <img src="resimler/9.jpg" onclick="openModal(this)">
+    
+</div>
+<div class="modal" id="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImage">
+ 
+</div>
+  <!-- footer.html -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo ve Açıklama -->
+          <div class="footer-section">
+          <h2 class="footer-title">İstanbul Rehberi</h2>
+          <p class="footer-text">Tarihin, kültürün ve güzelliklerin şehri İstanbul’u keşfedin.</p>
+          </div>
+
+    <!-- Bağlantılar -->
+    <div class="footer-section">
+      <h3 class="footer-heading">Bağlantılar</h3>
+      <ul class="footer-links">
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">Gezilecek Yerler</a></li>
+        <li><a href="#">Tarihi Mekanlar</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+    </div>
+
+    <!-- Sosyal Medya -->
+    <div class="footer-section">
+      <h3 class="footer-heading">Sosyal Medya</h3>
+      <ul class="footer-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+
+    <!-- İletişim -->
+    <div class="footer-section">
+      <h3 class="footer-heading">İletişim</h3>
+      <p class="footer-text">info@istanbulrehberi.com</p>
+      <p class="footer-text">+90 212 123 45 67</p>
+      <p class="footer-text">İstanbul, Türkiye</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 İstanbul Rehberi. Tüm hakları saklıdır.
+  </div>
+</footer>
+<script>
+  function openModal(img) {
+      document.getElementById("modal").style.display = "flex";
+      document.getElementById("modalImage").src = img.src;
+  }
+
+  function closeModal() {
+      document.getElementById("modal").style.display = "none";
+  }
+
+  document.getElementById("modal").addEventListener("click", function(e) {
+    if (e.target.id === "modal") {
+      closeModal();
+    }
+  });
+</script>
+
+
+</body>
+ </html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="stil1.css">
+    <title>Aanasayfa</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:99vh;
+}
+.cerceve{
+    margin-top: 10px;
+    width: 70%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.galeri{
+    position: relative;
+    width: 400%; 
+    left: 0;
+    animation:16s slayt infinite;
+}
+.galeri img{
+width: 25%;
+float: left;
+}
+@keyframes slayt{
+    0%{left: 0%;}
+    20%{left: 0%;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left: -200%;}
+   70%{left: -200%;}
+   75%{left: -300%;}
+   90%{left: -300%;}
+}
+</style>
+
+<body>
+    <div id="banner">
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="gezilebilicek yerler.html">Gezilebilicek yerler</a></li>
+                <li><a href="fotogaleri.html">Fotogaleri</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="tarihçe.html">Tarihçe</a></li>
+     </ul>
+            
+        </div>
+        
+    </div>
+ 
+<div class="cerceve">
+    <div class="galeri">
+        <img src="resim/ayasofyacamii.webp">
+        <img src="resim/nakkastepe-view.webp">
+        <img src="resim/anasayfaaa kız kulesi.jpg">
+        <img src="resim/galata kulesi.webp">
+        <img src="resim/süleymaniye cami ve külliyesi.webp">
+
+
+    </div>
+</div>
+</body>
+</html>
